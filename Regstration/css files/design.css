@@ -99,9 +99,13 @@ background:white;
 /* Inp-1,2,3,4 */
 
 .div-1 select{
+    font-weight: 500;
     width: 130%;
-    border-radius: 20px;
-    height: 45px
+    border-radius: 12px;
+    height: 40px;
+    border: none;
+    color: var(--color-1);
+    font-size: 15px;
 }
 
 .div-1 select option{
@@ -133,12 +137,13 @@ background:white;
     width: 130%;
     padding: 10px;
     background-color: #ffffff;
-    border: 1px solid white;
-    border-radius: 20px;
+    border: none;
+    border-radius: 12px;
     font-size: 15px;
     margin-bottom: 15px;
     box-sizing: border-box;
     outline: none;
+    height: 40px;
     
 }
 
@@ -264,15 +269,16 @@ padding-top: 80px;
 
 .btn{
     position: absolute;
-    height: 58px;
-    width: 243px;
+    height: 51px;
+    width: 193px;
     font-size: 25px;
-    color:#00507c;
-    background-color:white;
+    color: #00507c;
+    background-color: white;
     border-radius: 10px;
     transition: 0.7s;
-    bottom: 14%;
+    bottom: 10.75%;
     left: 71%;
+    border: none;
 
 }
 
