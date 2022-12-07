@@ -17,4 +17,4 @@ class pactientaccount(models.Model):
     def __str__(self):
      return self.first_name
 
-# Create your models here.
+    

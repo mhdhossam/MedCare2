@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{%static 'model-ai/css/consaltation.css' %}">
+    <link rel="stylesheet" href="{%static 'Home/CSS/Style.css' %}">
+    <link rel="stylesheet" href="{%static 'Home/CSS/all.min.css' %}">
+</head>
+
+<body>
+    <form method="POST">
+        {% csrf_token %}
+    <header class="container">
+        <div class="logo_cont">
+            
+               <div class="logo">
+                <img src="{%static 'Home/imgs/logo.png' %}" alt="">
+                </div>
+        
+            <div class="logoh1">
+                <h1><a href=""> Med</a></h1>
+                <h2><a href="">care</a></h2>
+            </div>
+        </div>
+        <div class="headlinks">
+            
+            <i class="fas fa-bars toggle-menu"></i>
+            
+            <ul>
+                <li><a href="{%url 'Home:Home' %}"> Home</a></li>
+                <li><a href="">Specialities</a></li>
+                <li><a href="{%url 'ai:ai' %}"id="consaltation" class="linking">consaltaion</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Hospital</a></li>
+            </ul>
+        </div>
+
+        {% comment %} <div class="btns-head">
+            <div class="btn-signin btn">
+                <a href="{%url 'logincards:sigin' %}"> <input type="button" class="btn-signup btn" value="Signin"></a>
+            </div>
+            <div class="btn-signup btn">
+                <a href="{%url 'registeras:register' %}"> <input type="button" class="btn-signup btn" value="Signup"></a>
+            </div>
+        </div> {% endcomment %}
+       
+    </header>
+</form>
+    <a href="#" id="consaltation" class="linking">consaltaion</a>
+    <div class="popup">
+        <span id="close">x</span>
+        <span id="back"><-</span>
+        <div id="consaltation-choise">
+            <h3>choose your diagnosis ? </h3>
+            <p>for diabetes click here</p>
+            <button onclick="diabetesForm()">diabetes</button>
+            <p>for heart attack click here </p>
+            <button onclick="heartForm()">heart</button>
+        </div>
+        <!-- this form for diabetes diagnosis -->
+        <form action="" id="diabetes">
+            <h3>welcome to diabetes consaltation </h3>          
+            <a href="#" class="linking">Age</a>
+            <input type="text" required>
+            <a href="#" class="linking">Pregnancies </a>
+            <input type="text" required> 
+            <br>
+            <a href="#" class="linking">Glucose </a>
+            <input type="text" required>
+            <a href="#" class="linking">BloodPressur </a>
+            <input type="text" required> 
+            <br>
+            <a href="#" class="linking">SkinThickness </a>
+            <input type="text" required>
+            <a href="#" class="linking">Insulin </a>
+            <input type="text" required>  
+            <br>
+            <a href="#" class="linking">BMI </a>
+            <input type="text" required>
+            <a href="#" class="linking">DPFunction</a>
+            <input type="text" required> <br>
+            <input type="submit" value="consoult"><br>
+        </form>
+        <!-- this form for heart attack diagnosis -->
+        <form action="" id="heart">
+            <h3>welcome to heart consaltation </h3>
+            <a href="#" class="linking">Age</a>
+            <input type="text" required>
+            <a href="#" class="linking">sex</a>
+            <input type="text" required> 
+            <br>
+            <a href="#" class="linking">CP </a>
+            <input type="text" required>
+            <a href="#" class="linking">trtdps </a>
+            <input type="text" required> 
+            <br>
+            <a href="#" class="linking">chol </a>
+            <input type="text" required>
+            <a href="#" class="linking">fbs </a>
+            <input type="text" required>  
+            <br>
+            <a href="#" class="linking">restecg</a>
+            <input type="text" required>
+            <a href="#" class="linking">thalachh </a>
+            <input type="text" required> <br>
+            <a href="#" class="linking">exng</a>
+            <input type="text" required>
+            <a href="#" class="linking">oldpeak</a>
+            <input type="text" required>  
+            <br>
+            <a href="#" class="linking">slp</a>
+            <input type="text" required>
+            <a href="#" class="linking">caa</a>
+            <input type="text" required> <br>
+            <a href="#" class="linking">thall</a>
+            <input type="text" required> <br>
+            <input type="submit" value="consoult"><br>
+        </form>
+    </div>
+    {% comment %} <script src="{%static 'model-ai/js/transation.js' %}"></script> {% endcomment %}
+</body>
+</html>

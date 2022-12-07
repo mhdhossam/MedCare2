@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
 from pathlib import Path
 import os
 
@@ -32,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # 'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'medicalproviders',
     'patientregister',
-    'registeras'
+    'registeras',
+    'Home',
+    'logincards',
+    'patientlogin',
+    'ai',
+    
 ]
 
 MIDDLEWARE = [
@@ -85,6 +90,7 @@ DATABASES = {
     }
     
 }
+
 
 
 # Password validation

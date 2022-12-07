@@ -24,6 +24,9 @@ urlpatterns = [
     path('patientregister/',include('patientregister.url',namespace='patientregister')),
     path('medicalprovider/',include('medicalproviders.url',namespace='medicalproviders')),
     path('registas/',include('registeras.url',namespace='registeras')),
-
+    path('',include('Home.url',namespace='Home')),
+    path('sigin/',include('logincards.url',namespace='logincards')),
+    path('',include('patientlogin.url',namespace='patientlogin')),
+    path('',include('ai.url',namespace='ai')),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
